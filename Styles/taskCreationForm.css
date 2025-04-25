@@ -1,35 +1,74 @@
+/* Styles/taskCreationForm.css */
+
+:root {
+  --primary-green: #c2f970;
+  --hover-green: #a9e65d;
+  --dark-bg: #1e1e1e;
+  --dark-grey: #2c2c2c;
+  --text-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-bg);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.page-wrapper {
+  width: 100%;
+  max-width: 500px;
+}
+
 .task-form {
-  background-color: #2c2c2c;
-  padding: 1rem;
-  border-radius: 6px;
+  background-color: var(--dark-grey);
+  padding: 2rem;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  color: #ffffff;
+}
+
+.task-form h2 {
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .task-form label {
-  color: #c2f970;
+  color: var(--primary-green);
 }
 
 .task-form input,
 .task-form textarea {
-  padding: 0.5rem;
-  border: none;
-  border-radius: 4px;
-  background-color: #1e1e1e;
-  color: #ffffff;
-}
-
-.task-form button {
-  background-color: #c2f970;
-  color: #1e1e1e;
   padding: 0.75rem;
   border: none;
   border-radius: 4px;
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+}
+
+.task-form button {
+  background-color: var(--primary-green);
+  color: var(--dark-bg);
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .task-form button:hover {
-  background-color: #a9e65d;
+  background-color: var(--hover-green);
 }

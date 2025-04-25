@@ -1,13 +1,28 @@
 <!-- Components/taskCreationForm.html -->
-<form class="task-form">
-  <label for="title">Task Title</label>
-  <input type="text" id="title" placeholder="Enter task title">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Creation Form</title>
+  <link rel="stylesheet" href="../Styles/taskCreationForm.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <form class="task-form">
+      <h2>Create a Task</h2>
 
-  <label for="description">Task Description</label>
-  <textarea id="description" rows="3" placeholder="Describe the task..."></textarea>
+      <label for="title">Task Title</label>
+      <input type="text" id="title" placeholder="Enter task title" />
 
-  <label for="due-date">Due Date</label>
-  <input type="date" id="due-date">
+      <label for="description">Task Description</label>
+      <textarea id="description" rows="3" placeholder="Describe the task..."></textarea>
 
-  <button type="submit">Add Task</button>
-</form>
+      <label for="due-date">Due Date</label>
+      <input type="date" id="due-date" />
+
+      <button type="submit">Add Task</button>
+    </form>
+  </div>
+</body>
+</html>
